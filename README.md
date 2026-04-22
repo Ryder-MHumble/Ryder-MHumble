@@ -1,274 +1,220 @@
-# -*- coding: utf-8 -*-
-# Copyright (c) 2025 relakkes@gmail.com
-#
-# This file is part of MediaCrawler project.
-# Repository: https://github.com/NanmiCoder/MediaCrawler/blob/main/media_platform/xhs/login.py
-# GitHub: https://github.com/NanmiCoder
-# Licensed under NON-COMMERCIAL LEARNING LICENSE 1.1
-#
+<!-- ============================================ -->
+<!-- 🔷 HEADER BANNER — 替换成你自己的 banner 图  -->
+<!-- ============================================ -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ryder-MHumble/Ryder-MHumble/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ryder-MHumble/Ryder-MHumble/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Ryder-MHumble/Ryder-MHumble/output/github-contribution-grid-snake.svg">
+</picture>
 
-# 声明：本代码仅供学习和研究目的使用。使用者应遵守以下原则：
-# 1. 不得用于任何商业用途。
-# 2. 使用时应遵守目标平台的使用条款和robots.txt规则。
-# 3. 不得进行大规模爬取或对平台造成运营干扰。
-# 4. 应合理控制请求频率，避免给目标平台带来不必要的负担。
-# 5. 不得用于任何非法或不当的用途。
-#
-# 详细许可条款请参阅项目根目录下的LICENSE文件。
-# 使用本代码即表示您同意遵守上述原则和LICENSE中的所有条款。
+<!-- ============================================ -->
+<!-- 🔷 BANNER  — 把下面 URL 换成你自己的 banner 图 -->
+<!-- ============================================ -->
+<!--
+<img width="100%" src="https://raw.githubusercontent.com/Ryder-MHumble/Ryder-MHumble/main/assets/banner.png" alt="Ryder Sun - Banner" />
+-->
 
+<br/>
 
-import asyncio
-import functools
-import sys
-from typing import Optional
+<!-- ============================================ -->
+<!-- 🔷 HEADER：头像 + 打字动画 + 标签              -->
+<!-- ============================================ -->
+<table>
+<tr>
+<td valign="center" width="200" align="center">
 
-from playwright.async_api import BrowserContext, Page
-from tenacity import (RetryError, retry, retry_if_result, stop_after_attempt,
-                      wait_fixed)
+<!-- 🖼️ 替换成你自己的头像 -->
+<img src="https://avatars.githubusercontent.com/u/Ryder-MHumble" width="180" style="border-radius: 50%; border: 3px solid #58A6FF;" />
 
-import config
-from base.base_crawler import AbstractLogin
-from cache.cache_factory import CacheFactory
-from tools import utils
+<br/><br/>
 
+<img src="https://komarev.com/ghpvc/?username=Ryder-MHumble&label=Profile+Views&color=0e75b6&style=flat" alt="profile views" />
 
-class XiaoHongShuLogin(AbstractLogin):
-    PROFILE_LINK_SELECTOR = "xpath=//a[contains(@href, '/user/profile/')]"
+</td>
+<td valign="center">
 
-    def __init__(self,
-                 login_type: str,
-                 browser_context: BrowserContext,
-                 context_page: Page,
-                 login_phone: Optional[str] = "",
-                 cookie_str: str = ""
-                 ):
-        config.LOGIN_TYPE = login_type
-        self.browser_context = browser_context
-        self.context_page = context_page
-        self.login_phone = login_phone
-        self.cookie_str = cookie_str
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&pause=800&color=58A6FF&center=false&vCenter=true&random=false&width=500&lines=Full-Cycle+AI+Product+Builder;Agent-Native+%7C+Infrastructure-First;From+Research+%E2%86%92+Industry+%E2%86%92+Building;Making+AI+Systems+That+Actually+Work" alt="Typing SVG" /></a>
 
-    @retry(stop=stop_after_attempt(600), wait=wait_fixed(1), retry=retry_if_result(lambda value: value is False))
-    async def check_login_state(self, no_logged_in_session: str) -> bool:
-        """
-        Verify login status using dual-check: UI elements and Cookies.
-        """
-        # 1. Priority check: Check if the "Me" (Profile) node appears in the sidebar
-        try:
-            # Selector for elements containing "Me" text with a link pointing to the profile
-            # XPath Explanation: Find a span with text "Me" inside an anchor tag (<a>) 
-            # whose href attribute contains "/user/profile/"
-            user_profile_selector = self.PROFILE_LINK_SELECTOR
-            
-            # Set a short timeout since this is called within a retry loop
-            is_visible = await self.context_page.is_visible(user_profile_selector, timeout=500)
-            if is_visible:
-                utils.logger.info("[XiaoHongShuLogin.check_login_state] Login status confirmed by profile link.")
-                return True
-        except Exception:
-            pass
+<br/>
 
-        # 2. Alternative: Check for CAPTCHA prompt
-        if "请通过验证" in await self.context_page.content():
-            utils.logger.info("[XiaoHongShuLogin.check_login_state] CAPTCHA appeared, please verify manually.")
+[![GitHub followers](https://img.shields.io/github/followers/Ryder-MHumble?label=Followers&style=for-the-badge&color=58A6FF)](https://github.com/Ryder-MHumble?tab=followers)
+[![GitHub stars](https://img.shields.io/github/stars/Ryder-MHumble?label=Total%20Stars&style=for-the-badge&color=F97316)]()
 
-        # 3. Compatibility fallback: Original Cookie-based change detection
-        current_cookie = await self.browser_context.cookies()
-        _, cookie_dict = utils.convert_cookies(current_cookie)
-        current_web_session = cookie_dict.get("web_session")
-        
-        # If web_session has changed, consider the login successful
-        if current_web_session and current_web_session != no_logged_in_session:
-            utils.logger.info("[XiaoHongShuLogin.check_login_state] Login status confirmed by Cookie (web_session changed).")
-            return True
+</td>
+</tr>
+</table>
 
-        return False
+<br/>
 
-    async def begin(self):
-        """Start login xiaohongshu"""
-        utils.logger.info("[XiaoHongShuLogin.begin] Begin login xiaohongshu ...")
-        try:
-            if await self.check_login_state(""):
-                utils.logger.info("[XiaoHongShuLogin.begin] Login already active, skip login flow.")
-                return
-        except Exception:
-            pass
-        if config.LOGIN_TYPE == "qrcode":
-            await self.login_by_qrcode()
-        elif config.LOGIN_TYPE == "phone":
-            await self.login_by_mobile()
-        elif config.LOGIN_TYPE == "cookie":
-            await self.login_by_cookies()
-        else:
-            raise ValueError("[XiaoHongShuLogin.begin]I nvalid Login Type Currently only supported qrcode or phone or cookies ...")
+<!-- ============================================ -->
+<!-- 🔷 ABOUT ME — 代码块风格                       -->
+<!-- ============================================ -->
+<img src="https://readme-jokes.vercel.app/api?theme=radical" alt="Jokes Card" align="right" width="40%" />
 
-    async def login_by_mobile(self):
-        """Login xiaohongshu by mobile"""
-        utils.logger.info("[XiaoHongShuLogin.login_by_mobile] Begin login xiaohongshu by mobile ...")
-        await asyncio.sleep(1)
-        try:
-            # After entering Xiaohongshu homepage, the login dialog may not pop up automatically, need to manually click login button
-            login_button_ele = await self.context_page.wait_for_selector(
-                selector="xpath=//*[@id='app']/div[1]/div[2]/div[1]/ul/div[1]/button",
-                timeout=5000
-            )
-            await login_button_ele.click()
-            # The login dialog has two forms: one shows phone number and verification code directly
-            # The other requires clicking to switch to phone login
-            element = await self.context_page.wait_for_selector(
-                selector='xpath=//div[@class="login-container"]//div[@class="other-method"]/div[1]',
-                timeout=5000
-            )
-            await element.click()
-        except Exception as e:
-            utils.logger.info("[XiaoHongShuLogin.login_by_mobile] have not found mobile button icon and keep going ...")
+### 🧭 About Me
 
-        await asyncio.sleep(1)
-        login_container_ele = await self.context_page.wait_for_selector("div.login-container")
-        input_ele = await login_container_ele.query_selector("label.phone > input")
-        await input_ele.fill(self.login_phone)
-        await asyncio.sleep(0.5)
+```json
+{
+  "role": "AI Product Manager & Full-Stack Builder",
+  "focus": ["AI Agent Systems", "Knowledge Graphs", "Academic AI Infrastructure"],
+  "philosophy": "Infrastructure > Application",
+  "stack": ["Python", "TypeScript", "Dart", "React"],
+  "currently_building": "Production AI agent ecosystems",
+  "from": "SCI Research → Meituan/Zhipu → Building"
+}
+```
 
-        send_btn_ele = await login_container_ele.query_selector("label.auth-code > span")
-        await send_btn_ele.click()  # Click to send verification code
-        sms_code_input_ele = await login_container_ele.query_selector("label.auth-code > input")
-        submit_btn_ele = await login_container_ele.query_selector("div.input-container > button")
-        cache_client = CacheFactory.create_cache(config.CACHE_TYPE_MEMORY)
-        max_get_sms_code_time = 60 * 2  # Maximum time to get verification code is 2 minutes
-        no_logged_in_session = ""
-        while max_get_sms_code_time > 0:
-            utils.logger.info(f"[XiaoHongShuLogin.login_by_mobile] get sms code from redis remaining time {max_get_sms_code_time}s ...")
-            await asyncio.sleep(1)
-            sms_code_key = f"xhs_{self.login_phone}"
-            sms_code_value = cache_client.get(sms_code_key)
-            if not sms_code_value:
-                max_get_sms_code_time -= 1
-                continue
+- 🔭 Building **AI Agent ecosystems** — data pipelines to orchestration frameworks
+- 🧠 From **academic AI** (SCI) to **industry products** (美团, 智谱, 集度)
+- 🏗️ Obsessed with the **infrastructure layer** — the stuff nobody sees but everything runs on
+- 💡 *"Tools lower execution barriers, not judgment barriers."*
 
-            current_cookie = await self.browser_context.cookies()
-            _, cookie_dict = utils.convert_cookies(current_cookie)
-            no_logged_in_session = cookie_dict.get("web_session")
+<br clear="right"/>
 
-            await sms_code_input_ele.fill(value=sms_code_value.decode())  # Enter SMS verification code
-            await asyncio.sleep(0.5)
-            agree_privacy_ele = self.context_page.locator("xpath=//div[@class='agreements']//*[local-name()='svg']")
-            await agree_privacy_ele.click()  # Click to agree to privacy policy
-            await asyncio.sleep(0.5)
+<!-- ============================================ -->
+<!-- 🔷 FEATURED PROJECTS                           -->
+<!-- ============================================ -->
+### 🔥 Featured Projects
 
-            await submit_btn_ele.click()  # Click login
+<table>
+<tr>
+<td width="50%">
 
-            # TODO: Should also check if the verification code is correct, as it may be incorrect
-            break
+#### 🌐 [Realm](https://github.com/Ryder-MHumble/Realm) `⭐ 23`
+> Real-time 3D visualization of AI agent activity — multi-agent orchestration visualizer with REST API integration.
 
-        try:
-            await self.check_login_state(no_logged_in_session)
-        except RetryError:
-            utils.logger.info("[XiaoHongShuLogin.login_by_mobile] Login xiaohongshu failed by mobile login method ...")
-            sys.exit()
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![3D](https://img.shields.io/badge/-Visualization-8B5CF6?style=flat-square)
 
-        wait_redirect_seconds = 5
-        utils.logger.info(f"[XiaoHongShuLogin.login_by_mobile] Login successful then wait for {wait_redirect_seconds} seconds redirect ...")
-        await asyncio.sleep(wait_redirect_seconds)
+</td>
+<td width="50%">
 
-    async def login_by_qrcode(self):
-        """login xiaohongshu website and keep webdriver login state"""
-        utils.logger.info("[XiaoHongShuLogin.login_by_qrcode] Begin login xiaohongshu by qrcode ...")
-        user_profile_selector = self.PROFILE_LINK_SELECTOR
-        # Some page variants are already authenticated when popup appears.
-        # If profile link is visible, skip qr-login flow directly.
-        try:
-            already_logged_in = await self.context_page.is_visible(user_profile_selector, timeout=1200)
-            if already_logged_in:
-                utils.logger.info("[XiaoHongShuLogin.login_by_qrcode] Already logged in on page, skip qrcode flow.")
-                return
-        except Exception:
-            pass
+#### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 12`
+> Self-evolving MLOps engine for remote sensing — Multi-Agent system (IDEATE framework) for automated detection.
 
-        # login_selector = "div.login-container > div.left > div.qrcode > img"
-        qrcode_img_selector = "xpath=//img[@class='qrcode-img']"
-        # find login qrcode
-        base64_qrcode_img = await utils.find_login_qrcode(
-            self.context_page,
-            selector=qrcode_img_selector
-        )
-        if not base64_qrcode_img:
-            utils.logger.info("[XiaoHongShuLogin.login_by_qrcode] login failed , have not found qrcode please check ....")
-            # if this website does not automatically popup login dialog box, we will manual click login button
-            await asyncio.sleep(0.5)
-            login_button_ele = self.context_page.locator("xpath=//*[@id='app']/div[1]/div[2]/div[1]/ul/div[1]/button")
-            await login_button_ele.click()
-            try:
-                already_logged_in = await self.context_page.is_visible(user_profile_selector, timeout=1200)
-                if already_logged_in:
-                    utils.logger.info("[XiaoHongShuLogin.login_by_qrcode] Already logged in after opening popup, skip qrcode.")
-                    return
-            except Exception:
-                pass
-            base64_qrcode_img = await utils.find_login_qrcode(
-                self.context_page,
-                selector=qrcode_img_selector
-            )
-            if not base64_qrcode_img:
-                sys.exit()
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![MLOps](https://img.shields.io/badge/-MLOps-EE4C23?style=flat-square)
 
-        # get not logged session
-        current_cookie = await self.browser_context.cookies()
-        _, cookie_dict = utils.convert_cookies(current_cookie)
-        no_logged_in_session = cookie_dict.get("web_session")
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-        # show login qrcode
-        # fix issue #12
-        # we need to use partial function to call show_qrcode function and run in executor
-        # then current asyncio event loop will not be blocked
-        partial_show_qrcode = functools.partial(utils.show_qrcode, base64_qrcode_img)
-        asyncio.get_running_loop().run_in_executor(executor=None, func=partial_show_qrcode)
+#### 🎓 [Scholars-System](https://github.com/Ryder-MHumble/Scholars-System) `⭐ 6`
+> Academic intelligence platform — knowledge graph-powered scholar profiling and talent discovery.
 
-        utils.logger.info(f"[XiaoHongShuLogin.login_by_qrcode] waiting for scan code login, remaining time is 120s")
-        try:
-            await self.check_login_state(no_logged_in_session)
-        except RetryError:
-            utils.logger.info("[XiaoHongShuLogin.login_by_qrcode] Login xiaohongshu failed by qrcode login method ...")
-            sys.exit()
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![KG](https://img.shields.io/badge/-KnowledgeGraph-8B5CF6?style=flat-square)
 
-        wait_redirect_seconds = 5
-        utils.logger.info(f"[XiaoHongShuLogin.login_by_qrcode] Login successful then wait for {wait_redirect_seconds} seconds redirect ...")
-        await asyncio.sleep(wait_redirect_seconds)
+</td>
+<td width="50%">
 
-    async def login_by_cookies(self):
-        """login xiaohongshu website by cookies with auto-fallback to qrcode if invalid"""
-        utils.logger.info("[XiaoHongShuLogin.login_by_cookies] Begin login xiaohongshu by cookie ...")
+#### 🕷️ [Nexus](https://github.com/Ryder-MHumble/Nexus) `⭐ 1`
+> Production data pipeline — transform unstructured web content into structured, AI-ready knowledge.
 
-        # Set cookies
-        for key, value in utils.convert_str_cookie_to_dict(self.cookie_str).items():
-            if key != "web_session":  # Only set web_session cookie attribute
-                continue
-            await self.browser_context.add_cookies([{
-                'name': key,
-                'value': value,
-                'domain': ".xiaohongshu.com",
-                'path': "/"
-            }])
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Data](https://img.shields.io/badge/-Pipeline-F97316?style=flat-square)
 
-        # Verify cookie validity by checking login state
-        await asyncio.sleep(2)  # Wait for page to load with cookies
-        await self.context_page.reload()  # Reload to apply cookies
-        await asyncio.sleep(2)
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-        # Check if logged in by looking for profile element
-        try:
-            user_profile_selector = self.PROFILE_LINK_SELECTOR
-            is_logged_in = await self.context_page.is_visible(user_profile_selector, timeout=3000)
+#### 🛡️ [Skill-Watchman](https://github.com/Ryder-MHumble/Skill-Watchman) `⭐ 1`
+> Governed skill routing for AI agents — safer installs, smarter picks, less prompt noise.
 
-            if is_logged_in:
-                utils.logger.info("[XiaoHongShuLogin.login_by_cookies] ✅ Cookie login successful!")
-                return
-            else:
-                utils.logger.warning("[XiaoHongShuLogin.login_by_cookies] ⚠️  Cookie appears invalid, profile element not found")
-        except Exception as e:
-            utils.logger.warning(f"[XiaoHongShuLogin.login_by_cookies] ⚠️  Cookie validation failed: {e}")
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Agent](https://img.shields.io/badge/-AgentSecurity-10B981?style=flat-square)
 
-        # Cookie invalid - fallback to QR code login
-        utils.logger.info("[XiaoHongShuLogin.login_by_cookies] 🔄 Cookie invalid, falling back to QR code login...")
-        config.LOGIN_TYPE = "qrcode"  # Switch login type
-        await self.login_by_qrcode()
+</td>
+<td width="50%">
+
+#### 🐱 [Guameow](https://github.com/Ryder-MHumble/Guameow) `⭐ 4`
+> AI玄学App for Gen-Z — daily fortune, AI chat, tarot. Because AI can be fun too.
+
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- ============================================ -->
+<!-- 🔷 ARCHITECTURE DIAGRAM                        -->
+<!-- ============================================ -->
+### 🧩 Architecture
+
+```
+   ┌──────────────── Agent Layer ────────────────┐
+   │  Realm (3D可视化)  ·  Skill-Watchman (治理)   │
+   └────────────────────┬────────────────────────┘
+                        │
+   ┌──────────────── Logic Layer ────────────────┐
+   │  DeanAgent  ·  NanoBot  ·  EvoLabeler       │
+   └────────────────────┬────────────────────────┘
+                        │
+   ┌──────────────── Data Layer ─────────────────┐
+   │  Nexus (管线)  ·  Social-Crawler (采集)       │
+   └────────────────────┬────────────────────────┘
+                        │
+   ┌──────────── Foundation Layer ───────────────┐
+   │  Knowledge Graph  ·  Academic Infra         │
+   └─────────────────────────────────────────────┘
+```
+
+<br/>
+
+<!-- ============================================ -->
+<!-- 🔷 TECH STACK                                  -->
+<!-- ============================================ -->
+### 🛠️ Tech Stack
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,dart,react,nextjs,nodejs,git,docker,postgres,mongodb,linux,vscode&perline=6" />
+</p>
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C23?style=flat-square&logo=pytorch&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-58A6FF?style=flat-square)
+![MCP](https://img.shields.io/badge/MCP-Protocol-8B5CF6?style=flat-square)
+![Knowledge Graphs](https://img.shields.io/badge/Knowledge-Graphs-10B981?style=flat-square)
+
+<br/>
+
+<!-- ============================================ -->
+<!-- 🔷 GITHUB STATS                                -->
+<!-- ============================================ -->
+### 📊 GitHub Stats
+
+<p>
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Ryder-MHumble&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
+  &nbsp;&nbsp;
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ryder-MHumble&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=300" />
+</p>
+
+<p>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ryder-MHumble&theme=tokyonight&hide_border=true" />
+</p>
+
+<!-- ============================================ -->
+<!-- 🔷 CONTRIBUTION SNAKE ANIMATION                -->
+<!-- ============================================ -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ryder-MHumble/Ryder-MHumble/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ryder-MHumble/Ryder-MHumble/output/github-contribution-grid-snake.svg">
+</picture>
+
+<br/>
+
+<!-- ============================================ -->
+<!-- 🔷 FOOTER                                      -->
+<!-- ============================================ -->
+<p align="center">
+  <i>"能把一个AI产品的想法从零开始做成 production deployment，而且能以极小的团队做到。"</i>
+</p>
+
+<p align="center">
+  <a href="mailto:mhumble0221@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://github.com/Ryder-MHumble"><img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" /></a>
+</p>
