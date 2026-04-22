@@ -19,7 +19,7 @@
 [![Followers](https://img.shields.io/github/followers/Ryder-MHumble?label=Followers&style=for-the-badge&color=0E75B6)](https://github.com/Ryder-MHumble?tab=followers)
 [![Stars](https://img.shields.io/github/stars/Ryder-MHumble?label=Total%20Stars&style=for-the-badge&color=F97316)](https://github.com/Ryder-MHumble?tab=repositories)
 
-把研究型能力、数据基础设施和 agent workflow 接成可部署、可维护、可持续迭代的产品闭环。
+I build agent-native products by connecting research, data infrastructure, and execution systems into production-ready loops.
 
 <p align="left">
   <a href="https://personal-resume-jet.vercel.app/"><img src="https://img.shields.io/badge/Website-Personal%20Site-0E75B6?style=for-the-badge&logo=vercel&logoColor=white" alt="Website" /></a>
@@ -30,47 +30,48 @@
 </tr>
 </table>
 
-## 关于我
+## About
 
 ```json
 {
-  "定位": "AI Product Builder / Infrastructure Engineer",
-  "专注": ["Agent-native products", "Knowledge systems", "Research-to-production delivery"],
-  "方法": "从系统出发，用产品判断力推进交付，让能力在生产环境里形成闭环",
-  "技术栈": ["Python", "TypeScript", "Dart", "React"],
-  "当前在做": "可部署、可观测、可治理的多智能体系统",
-  "经历": "SCI 研究 -> 美团 / 智谱 / 集度 -> 独立构建"
+  "role": "AI Product Builder / Infrastructure Engineer",
+  "focus": ["Agent-native products", "Knowledge systems", "Research-to-production delivery"],
+  "approach": "Start from the system, ship with product judgment, and keep the loop operational",
+  "stack": ["Python", "TypeScript", "Dart", "React"],
+  "currently_building": "Multi-agent systems that can be deployed, observed, and governed",
+  "background": "SCI research to Meituan / Zhipu / Jidu to independent building"
 }
 ```
 
-- 关注能真正跑起来的 AI 产品，而不是只停留在演示层的能力拼装。
-- 擅长把知识组织、数据管线、多智能体编排和交互体验接成完整交付链路。
-- 对 production readiness、observability 和 governance 有持续偏好。
+- I focus on AI systems that can actually ship, not just impressive demos.
+- I connect data pipelines, knowledge organization, multi-agent orchestration, and product UX into one delivery chain.
+- I care about production readiness, observability, and governance as first-class concerns.
 
-## 能力版图
+## Capability Map
 
-| 层级 | 关注点 | 交付结果 |
+| Layer | Focus | Outcome |
 | --- | --- | --- |
-| Product Systems | Agent 工作台、交互体验、使用场景设计 | 让模型能力真正被使用 |
-| Execution Logic | 编排、自动化、任务拆解、工具调用 | 让复杂流程稳定执行 |
-| Data Infrastructure | 抓取、清洗、结构化、入库 | 让噪声输入变成可复用知识 |
-| Knowledge Layer | 知识图谱、学术画像、实体关系建模 | 让系统具备长期记忆和高质量上下文 |
+| Product Systems | Agent workbenches, interaction design, operator workflows | Turn model capability into usable products |
+| Execution Logic | Orchestration, automation, decomposition, tool use | Keep complex flows running reliably |
+| Data Infrastructure | Crawling, cleaning, structuring, storage | Turn noisy input into reusable knowledge |
+| Knowledge Layer | Knowledge graphs, academic profiling, entity modeling | Give systems long-term memory and usable context |
 
-## 技术栈
+## Tech Stack
 
-主要工作在 `Python`、`TypeScript` 和 `Dart` 之间，偏好把模型能力包进清晰、可维护的系统边界里。
+Most of my work sits across `Python`, `TypeScript`, and `Dart`, with a bias toward clean system boundaries and maintainable execution.
 
 <p>
   <img src="https://skillicons.dev/icons?i=python,typescript,javascript,dart,react,nextjs,nodejs,git,docker,postgres,mongodb,linux,vscode&perline=7" alt="Tech stack" />
 </p>
 
-## 代表项目
+## Featured Projects
 
 <table>
 <tr>
 <td width="50%">
 
 #### 🌐 [Realm](https://github.com/Ryder-MHumble/Realm) `⭐ 23`
+>
 > Real-time 3D visualization of AI agent activity — multi-agent orchestration visualizer with REST API integration.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -80,6 +81,7 @@
 <td width="50%">
 
 #### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 12`
+>
 > Self-evolving MLOps engine for remote sensing — Multi-Agent system (IDEATE framework) for automated detection.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -91,6 +93,7 @@
 <td width="50%">
 
 #### 🎓 [Scholars-System](https://github.com/Ryder-MHumble/Scholars-System) `⭐ 6`
+>
 > Academic intelligence platform — knowledge graph-powered scholar profiling and talent discovery.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -100,6 +103,7 @@
 <td width="50%">
 
 #### 🕷️ [Nexus](https://github.com/Ryder-MHumble/Nexus) `⭐ 1`
+>
 > Production data pipeline — transform unstructured web content into structured, AI-ready knowledge.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -111,6 +115,7 @@
 <td width="50%">
 
 #### 🛡️ [Skill-Watchman](https://github.com/Ryder-MHumble/Skill-Watchman) `⭐ 1`
+>
 > Governed skill routing for AI agents — safer installs, smarter picks, less prompt noise.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -120,6 +125,7 @@
 <td width="50%">
 
 #### 🐱 [Guameow](https://github.com/Ryder-MHumble/Guameow) `⭐ 4`
+>
 > AI玄学App for Gen-Z — daily fortune, AI chat, tarot. Because AI can be fun too.
 
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
@@ -129,9 +135,9 @@
 </tr>
 </table>
 
-## 构建信号
+## Build Signals
 
-这些图表不是装饰，它们对应的是持续构建、交付节奏和公开输出的侧面证据。
+These panels are not decoration. They show build cadence, delivery output, and the public surface of ongoing work.
 
 <p>
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=Ryder-MHumble&show_icons=true&theme=transparent&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
@@ -145,7 +151,7 @@
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ryder-MHumble&bg_color=ffffff00&color=0e75b6&line=f97316&point=0e75b6&area=true&hide_border=true" alt="Activity graph" />
   </p>
 
-## 个人主页
+## Personal Site
 
 <p align="center">
   <a href="https://personal-resume-jet.vercel.app/">
@@ -153,11 +159,16 @@
   </a>
 </p>
 
-更完整的履历、项目背景和工作方式，放在个人主页里。
 
-## 联系方式
+For a fuller view of my background, project context, and operating style:
 
-如果你在做 AI 产品、Agent 系统、知识基础设施，或者需要把研究型原型推进到可运行交付，欢迎联系我。
+<p>
+  <a href="https://personal-resume-jet.vercel.app/"><img src="https://img.shields.io/badge/Website-Personal%20Site-0E75B6?style=for-the-badge&logo=vercel&logoColor=white" alt="Website" /></a>
+</p>
+
+## Contact
+
+If you are building AI products, agent systems, or knowledge infrastructure, or need to move a research-grade prototype into a working delivery, feel free to reach out.
 
 <p>
   <a href="https://personal-resume-jet.vercel.app/"><img src="https://img.shields.io/badge/Website-Personal%20Site-0E75B6?style=for-the-badge&logo=vercel&logoColor=white" alt="Website" /></a>
