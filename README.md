@@ -18,19 +18,7 @@
 [![Followers](https://img.shields.io/github/followers/Ryder-MHumble?label=Followers&style=for-the-badge&color=0E75B6)](https://github.com/Ryder-MHumble?tab=followers)
 [![Stars](https://img.shields.io/github/stars/Ryder-MHumble?label=Total%20Stars&style=for-the-badge&color=F97316)](https://github.com/Ryder-MHumble?tab=repositories)
 
-I build agent-native products by connecting research, data infrastructure, and execution systems into production-ready loops.
-
-<p align="left">
-  <a href="https://personal-resume-jet.vercel.app/"><img src="https://img.shields.io/badge/Website-Personal%20Site-0E75B6?style=for-the-badge&logo=vercel&logoColor=white" alt="Website" /></a>
-  <a href="mailto:mhumble0221@gmail.com"><img src="https://img.shields.io/badge/Email-Direct%20Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-</p>
-
-<p align="left">
-  <a href="https://space.bilibili.com/296920670?spm_id_from=333.1007.0.0"><img src="https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili" /></a>
-  <a href="https://www.linkedin.com/in/ryder-sun"><img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="44" alt="LinkedIn" /></a>
-  <a href="https://www.youtube.com/@MinghaoSun-w6s"><img src="https://user-images.githubusercontent.com/74038190/235294007-de441046-823e-4eff-89bf-d4df52858b65.gif" width="44" alt="YouTube" /></a>
-  <a href="https://x.com/RyderSun0221"><img src="https://user-images.githubusercontent.com/74038190/235294011-b8074c31-9097-4a65-a594-4151b58743a8.gif" width="44" alt="X / Twitter" /></a>
-</p>
+Currently working as an AI Product Manager at the Zhongguancun Artificial Institute「ZGCI」, I previously worked at leading technology companies such as Zhipu and Meituan. I am skilled in the full-stack design of 0-1 products, including service systems, architecture, iteration directions, and more. I can connect research, data infrastructure, and execution systems into a production-ready loop to build proxy native products.
 
 </td>
 </tr>
