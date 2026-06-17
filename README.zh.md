@@ -26,26 +26,16 @@
   <a href="mailto:mhumble0221@gmail.com"><img src="https://img.shields.io/badge/Email-Direct%20Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
+<p align="left">
+  <a href="https://space.bilibili.com/296920670?spm_id_from=333.1007.0.0"><img src="https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili" /></a>
+  <a href="https://www.linkedin.com/in/ryder-sun"><img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="44" alt="LinkedIn" /></a>
+  <a href="https://www.youtube.com/@MinghaoSun-w6s"><img src="https://user-images.githubusercontent.com/74038190/235294007-de441046-823e-4eff-89bf-d4df52858b65.gif" width="44" alt="YouTube" /></a>
+  <a href="https://x.com/RyderSun0221"><img src="https://user-images.githubusercontent.com/74038190/235294011-b8074c31-9097-4a65-a594-4151b58743a8.gif" width="44" alt="X / Twitter" /></a>
+</p>
+
 </td>
 </tr>
 </table>
-
-## 关于我
-
-```json
-{
-  "定位": "AI Product Builder / Infrastructure Engineer",
-  "专注": ["Agent-native products", "Knowledge systems", "Research-to-production delivery"],
-  "方法": "从系统出发，用产品判断力推进交付，让能力在生产环境里形成闭环",
-  "技术栈": ["Python", "TypeScript", "Dart", "React"],
-  "当前在做": "可部署、可观测、可治理的多智能体系统",
-  "经历": "SCI 研究 -> 美团 / 智谱 / 集度 -> 独立构建"
-}
-```
-
-- 关注能真正跑起来的 AI 产品，而不是只停留在演示层的能力拼装。
-- 擅长把知识组织、数据管线、多智能体编排和交互体验接成完整交付链路。
-- 对 production readiness、observability 和 governance 有持续偏好。
 
 ## 能力版图
 
@@ -60,8 +50,15 @@
 
 主要工作在 `Python`、`TypeScript` 和 `Dart` 之间，偏好把模型能力包进清晰、可维护的系统边界里。
 
-<p>
-  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,dart,react,nextjs,nodejs,git,docker,postgres,mongodb,linux,vscode&perline=7" alt="Tech stack" />
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="70" alt="JavaScript animated logo" />
+  <img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="70" alt="Python animated logo" />
+  <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="70" alt="React animated logo" />
+  <img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="70" alt="Node.js animated logo" />
+  <img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="70" alt="GitHub animated logo" />
+  <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="70" alt="VS Code animated logo" />
+  <img src="https://user-images.githubusercontent.com/74038190/212281756-450d3ffa-9335-4b98-a965-db8a18fee927.gif" width="70" alt="Android animated logo" />
+  <img src="https://user-images.githubusercontent.com/74038190/212280805-9bcb336b-8c55-46a8-abf8-ff286ab55472.gif" width="70" alt="Git animated logo" />
 </p>
 
 ## 代表项目
@@ -131,29 +128,17 @@
 
 ## 构建信号
 
-这些图表不是装饰，它们对应的是持续构建、交付节奏和公开输出的侧面证据。
+这里改为使用 [github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib) 生成的 3D contribution map。Workflow 会每天自动运行，也可以在 GitHub Actions 里手动触发。
 
-<p>
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Ryder-MHumble&show_icons=true&theme=transparent&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ryder-MHumble&layout=compact&theme=transparent&hide_border=true&langs_count=8" alt="Top languages" />
+<p align="center">
+  <img src="./profile-3d-contrib/profile-gitblock.svg" width="100%" alt="Ryder Sun 3D GitHub contribution graph" />
 </p>
-
-<details>
-  <summary>展开更多构建数据</summary>
-  <br />
-  <p>
-    <img src="https://streak-stats.demolab.com/?user=Ryder-MHumble&theme=transparent&hide_border=true" alt="GitHub streak" />
-  </p>
-  <p>
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ryder-MHumble&bg_color=ffffff00&color=0e75b6&line=f97316&point=0e75b6&area=true&hide_border=true" alt="Activity graph" />
-  </p>
-</details>
 
 ## 个人主页
 
 <p align="center">
   <a href="https://personal-resume-jet.vercel.app/">
-    <img src="./Banner.png" width="100%" alt="Ryder Sun personal site" />
+    <img src="https://user-images.githubusercontent.com/74038190/240304586-d48893bd-0757-481c-8d7e-ba3e163feae7.png" width="100%" alt="Ryder Sun personal site" />
   </a>
 </p>
 
@@ -167,4 +152,8 @@
   <a href="https://personal-resume-jet.vercel.app/"><img src="https://img.shields.io/badge/Website-Personal%20Site-0E75B6?style=for-the-badge&logo=vercel&logoColor=white" alt="Website" /></a>
   <a href="mailto:mhumble0221@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/Ryder-MHumble"><img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://space.bilibili.com/296920670?spm_id_from=333.1007.0.0"><img src="https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili" /></a>
+  <a href="https://www.linkedin.com/in/ryder-sun"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.youtube.com/@MinghaoSun-w6s"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" /></a>
+  <a href="https://x.com/RyderSun0221"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
 </p>
