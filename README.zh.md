@@ -55,60 +55,60 @@
 <tr>
 <td width="50%">
 
-#### 🌐 [Realm](https://github.com/Ryder-MHumble/Realm) `⭐ 23`
-> Real-time 3D visualization of AI agent activity — multi-agent orchestration visualizer with REST API integration.
+#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 53`
+> 本地优先的桌面工作区，用于持久化多 Agent 任务、原生 CLI 会话和受控协作。
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![3D](https://img.shields.io/badge/-Visualization-8B5CF6?style=flat-square)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
+![Desktop](https://img.shields.io/badge/-%E6%A1%8C%E9%9D%A2%E5%B7%A5%E4%BD%9C%E5%8C%BA-0E75B6?style=flat-square)
 
 </td>
 <td width="50%">
 
-#### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 12`
-> Self-evolving MLOps engine for remote sensing — Multi-Agent system (IDEATE framework) for automated detection.
+#### 🌐 [Realm](https://github.com/Ryder-MHumble/Realm) `⭐ 26`
+> AI Agent 活动的实时 3D 可视化，多 Agent 编排可视化器，并支持外部系统 REST API 接入。
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![3D](https://img.shields.io/badge/-3D%E5%8F%AF%E8%A7%86%E5%8C%96-8B5CF6?style=flat-square)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 15`
+> 面向遥感目标检测的自进化 MLOps 引擎，基于 IDEATE 框架的 Multi-Agent 系统。
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![MLOps](https://img.shields.io/badge/-MLOps-EE4C23?style=flat-square)
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
-#### 🎓 [Scholars-System](https://github.com/Ryder-MHumble/Scholars-System) `⭐ 6`
-> Academic intelligence platform — knowledge graph-powered scholar profiling and talent discovery.
+#### 🎓 [Scholars-System](https://github.com/Ryder-MHumble/Scholars-System) `⭐ 9`
+> 学术情报平台，基于知识图谱构建学者画像与人才发现能力。
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![KG](https://img.shields.io/badge/-KnowledgeGraph-8B5CF6?style=flat-square)
-
-</td>
-<td width="50%">
-
-#### 🕷️ [Nexus](https://github.com/Ryder-MHumble/Nexus) `⭐ 1`
-> Production data pipeline — transform unstructured web content into structured, AI-ready knowledge.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Data](https://img.shields.io/badge/-Pipeline-F97316?style=flat-square)
+![KG](https://img.shields.io/badge/-%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1-8B5CF6?style=flat-square)
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-#### 🛡️ [Skill-Watchman](https://github.com/Ryder-MHumble/Skill-Watchman) `⭐ 1`
-> Governed skill routing for AI agents — safer installs, smarter picks, less prompt noise.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Agent](https://img.shields.io/badge/-AgentSecurity-10B981?style=flat-square)
-
-</td>
-<td width="50%">
-
-#### 🐱 [Guameow](https://github.com/Ryder-MHumble/Guameow) `⭐ 4`
-> AI玄学App for Gen-Z — daily fortune, AI chat, tarot. Because AI can be fun too.
+#### 🐱 [Guameow](https://github.com/Ryder-MHumble/Guameow) `⭐ 8`
+> 面向 Z 世代的 AI 玄学 App，包含每日运势、AI 聊天、塔罗和轻量互动循环。
 
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
 ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square)
+
+</td>
+<td width="50%">
+
+#### 🛰️ [TDA-YOLO](https://github.com/Ryder-MHumble/TDA-YOLO) `⭐ 7`
+> 面向无人机遥感目标检测的自适应 YOLO 框架，强化采样机制与检测头设计。
+
+![Research](https://img.shields.io/badge/-%E7%A0%94%E7%A9%B6-1A3A5C?style=flat-square)
+![YOLO](https://img.shields.io/badge/-%E9%81%A5%E6%84%9F%E6%A3%80%E6%B5%8B-10B981?style=flat-square)
 
 </td>
 </tr>
