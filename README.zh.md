@@ -51,11 +51,12 @@
 
 ## 代表项目
 
+<!-- featured-projects:start -->
 <table>
 <tr>
 <td width="50%">
 
-#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 53`
+#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 102`
 > 本地优先的桌面工作区，用于持久化多 Agent 任务、原生 CLI 会话和受控协作。
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
@@ -113,6 +114,7 @@
 </td>
 </tr>
 </table>
+<!-- featured-projects:end -->
 
 ## 构建信号
 
