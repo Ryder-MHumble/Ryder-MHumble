@@ -1,8 +1,8 @@
 name: Update Featured Projects
 
 on:
-  schedule: # 03:30 Asia/Shanghai == 19:30 UTC
-    - cron: "30 19 * * *"
+  schedule: # Every 4 hours
+    - cron: "0 */4 * * *"
   workflow_dispatch:
 
 permissions:
