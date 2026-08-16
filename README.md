@@ -55,20 +55,20 @@ Most of my work sits across `Python`, `TypeScript`, and `Dart`, with a bias towa
 <tr>
 <td width="50%">
 
-#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 76`
-> Local-first desktop workspace for persistent multi-agent work, native CLI sessions, and controlled collaboration.
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
-![Desktop](https://img.shields.io/badge/-DesktopWorkspace-0E75B6?style=flat-square)
-
-</td>
-<td width="50%">
-
 #### 🌐 [Realm](https://github.com/Ryder-MHumble/Realm) `⭐ 26`
 > Real-time 3D visualization of AI agent activity — multi-agent orchestration visualizer with REST API integration.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![3D](https://img.shields.io/badge/-Visualization-8B5CF6?style=flat-square)
+
+</td>
+<td width="50%">
+
+#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 22`
+> Local-first desktop workspace for persistent multi-agent work, native CLI sessions, and controlled collaboration.
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
+![Desktop](https://img.shields.io/badge/-DesktopWorkspace-0E75B6?style=flat-square)
 
 </td>
 </tr>
