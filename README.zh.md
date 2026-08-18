@@ -65,22 +65,22 @@
 </td>
 <td width="50%">
 
-#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 15`
-> 本地优先的桌面工作区，用于持久化多 Agent 任务、原生 CLI 会话和受控协作。
+#### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 17`
+> 面向遥感目标检测的自进化 MLOps 引擎，基于 IDEATE 框架的 Multi-Agent 系统。
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
-![Desktop](https://img.shields.io/badge/-%E6%A1%8C%E9%9D%A2%E5%B7%A5%E4%BD%9C%E5%8C%BA-0E75B6?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![MLOps](https://img.shields.io/badge/-MLOps-EE4C23?style=flat-square)
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-#### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 15`
-> 面向遥感目标检测的自进化 MLOps 引擎，基于 IDEATE 框架的 Multi-Agent 系统。
+#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 16`
+> 本地优先的桌面工作区，用于持久化多 Agent 任务、原生 CLI 会话和受控协作。
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![MLOps](https://img.shields.io/badge/-MLOps-EE4C23?style=flat-square)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
+![Desktop](https://img.shields.io/badge/-%E6%A1%8C%E9%9D%A2%E5%B7%A5%E4%BD%9C%E5%8C%BA-0E75B6?style=flat-square)
 
 </td>
 <td width="50%">
