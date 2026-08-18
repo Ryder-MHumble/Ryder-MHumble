@@ -64,22 +64,22 @@ Most of my work sits across `Python`, `TypeScript`, and `Dart`, with a bias towa
 </td>
 <td width="50%">
 
-#### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 15`
-> Self-evolving MLOps engine for remote sensing — Multi-Agent system (IDEATE framework) for automated detection.
+#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 15`
+> Local-first desktop workspace for persistent multi-agent work, native CLI sessions, and controlled collaboration.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![MLOps](https://img.shields.io/badge/-MLOps-EE4C23?style=flat-square)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
+![Desktop](https://img.shields.io/badge/-DesktopWorkspace-0E75B6?style=flat-square)
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 13`
-> Local-first desktop workspace for persistent multi-agent work, native CLI sessions, and controlled collaboration.
+#### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 15`
+> Self-evolving MLOps engine for remote sensing — Multi-Agent system (IDEATE framework) for automated detection.
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
-![Desktop](https://img.shields.io/badge/-DesktopWorkspace-0E75B6?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![MLOps](https://img.shields.io/badge/-MLOps-EE4C23?style=flat-square)
 
 </td>
 <td width="50%">
