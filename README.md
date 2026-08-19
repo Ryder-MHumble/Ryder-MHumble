@@ -64,7 +64,7 @@ Most of my work sits across `Python`, `TypeScript`, and `Dart`, with a bias towa
 </td>
 <td width="50%">
 
-#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 18`
+#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 20`
 > Local-first desktop workspace for persistent multi-agent work, native CLI sessions, and controlled collaboration.
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
