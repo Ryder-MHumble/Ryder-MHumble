@@ -56,20 +56,20 @@
 <tr>
 <td width="50%">
 
+#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 26`
+> 本地优先的桌面工作区，用于持久化多 Agent 任务、原生 CLI 会话和受控协作。
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
+![Desktop](https://img.shields.io/badge/-%E6%A1%8C%E9%9D%A2%E5%B7%A5%E4%BD%9C%E5%8C%BA-0E75B6?style=flat-square)
+
+</td>
+<td width="50%">
+
 #### 🌐 [Realm](https://github.com/Ryder-MHumble/Realm) `⭐ 26`
 > AI Agent 活动的实时 3D 可视化，多 Agent 编排可视化器，并支持外部系统 REST API 接入。
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![3D](https://img.shields.io/badge/-3D%E5%8F%AF%E8%A7%86%E5%8C%96-8B5CF6?style=flat-square)
-
-</td>
-<td width="50%">
-
-#### 🧩 [Meldwork](https://github.com/Ryder-MHumble/Meldwork) `⭐ 24`
-> 本地优先的桌面工作区，用于持久化多 Agent 任务、原生 CLI 会话和受控协作。
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
-![Desktop](https://img.shields.io/badge/-%E6%A1%8C%E9%9D%A2%E5%B7%A5%E4%BD%9C%E5%8C%BA-0E75B6?style=flat-square)
 
 </td>
 </tr>
