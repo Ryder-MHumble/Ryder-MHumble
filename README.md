@@ -84,7 +84,7 @@ Most of my work sits across `Python`, `TypeScript`, and `Dart`, with a bias towa
 </td>
 <td width="50%">
 
-#### 🎓 [Scholars-System](https://github.com/Ryder-MHumble/Scholars-System) `⭐ 9`
+#### 🎓 [Scholars-System](https://github.com/Ryder-MHumble/Scholars-System) `⭐ 10`
 > Academic intelligence platform — knowledge graph-powered scholar profiling and talent discovery.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)

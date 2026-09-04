@@ -85,7 +85,7 @@
 </td>
 <td width="50%">
 
-#### 🎓 [Scholars-System](https://github.com/Ryder-MHumble/Scholars-System) `⭐ 9`
+#### 🎓 [Scholars-System](https://github.com/Ryder-MHumble/Scholars-System) `⭐ 10`
 > 学术情报平台，基于知识图谱构建学者画像与人才发现能力。
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
