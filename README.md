@@ -75,7 +75,7 @@ Most of my work sits across `Python`, `TypeScript`, and `Dart`, with a bias towa
 <tr>
 <td width="50%">
 
-#### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 17`
+#### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 18`
 > Self-evolving MLOps engine for remote sensing — Multi-Agent system (IDEATE framework) for automated detection.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)

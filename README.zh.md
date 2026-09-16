@@ -76,7 +76,7 @@
 <tr>
 <td width="50%">
 
-#### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 17`
+#### 🔬 [EvoLabeler](https://github.com/Ryder-MHumble/EvoLabeler-AIAgent-MLOps) `⭐ 18`
 > 面向遥感目标检测的自进化 MLOps 引擎，基于 IDEATE 框架的 Multi-Agent 系统。
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
