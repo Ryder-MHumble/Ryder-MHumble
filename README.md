@@ -64,7 +64,7 @@ Most of my work sits across `Python`, `TypeScript`, and `Dart`, with a bias towa
 </td>
 <td width="50%">
 
-#### 🌐 [Realm](https://github.com/Ryder-MHumble/Realm) `⭐ 26`
+#### 🌐 [Realm](https://github.com/Ryder-MHumble/Realm) `⭐ 27`
 > Real-time 3D visualization of AI agent activity — multi-agent orchestration visualizer with REST API integration.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)

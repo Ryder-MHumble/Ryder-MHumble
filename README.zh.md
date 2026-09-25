@@ -65,7 +65,7 @@
 </td>
 <td width="50%">
 
-#### 🌐 [Realm](https://github.com/Ryder-MHumble/Realm) `⭐ 26`
+#### 🌐 [Realm](https://github.com/Ryder-MHumble/Realm) `⭐ 27`
 > AI Agent 活动的实时 3D 可视化，多 Agent 编排可视化器，并支持外部系统 REST API 接入。
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
